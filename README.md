@@ -2,6 +2,8 @@
 
 This is the community XR **UI Shell** for the AeroBeat platform.
 
+🚧 **Scope note:** this repo should be read as a **future / third-wave shell path** for AeroBeat's later VR return, not as a current parity or official v1 release target. The locked v1 product direction is **PC-first camera gameplay** (`boxing` + `flow`), with mobile following later and XR after that.
+
 ## 📋 Repository Details
 
 *   **Type:** UI Shell
@@ -42,7 +44,7 @@ From the repo root:
 godot --editor --path .testbed
 ```
 
-Use this `.testbed/` project as the canonical direct-development and bugfinding surface for XR shell work.
+Use this `.testbed/` project as the canonical direct-development and bugfinding surface for future XR shell work.
 
 ### Import smoke check
 
@@ -66,6 +68,7 @@ godot --headless --path .testbed --script addons/gut/gut_cmdln.gd \
 ### Validation notes
 
 - `.testbed/addons.jsonc` is the committed dev/test dependency contract.
+- XR remains a future / third-wave shell path; this repo should not claim present-tense release parity with the active desktop-first v1 slice.
 - The current manifest still pins the transition-era `aerobeat-core` package key alongside `aerobeat-ui-core` and `aerobeat-ui-kit-community`. Treat that old core pin as bootstrap-state drift rather than the canonical lane model.
 - Canonical shared dependency language for UI shell repos is `aerobeat-ui-core` plus the concrete UI kit and any additional lane repos the shell actually consumes.
 - Repo-local unit tests live under `.testbed/tests/`; this repo's current package payload is rooted at `/`, so the workbench does not ship a `.testbed/src` bridge for this subset.

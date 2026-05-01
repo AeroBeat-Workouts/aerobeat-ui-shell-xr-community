@@ -1,19 +1,19 @@
 {
   "$schema": "https://chickensoft.games/schemas/addons.schema.json",
   "addons": {
-    // Batch 2 pins the foundational core contract for XR shell work.
+    // Current bootstrap-state pin for future XR shell workbench validation.
     "aerobeat-core": {
       "url": "git@github.com:AeroBeat-Workouts/aerobeat-core.git",
       "checkout": "v0.1.0",
       "subfolder": "/"
     },
-    // Batch 2 pins the shared UI logic contract for XR shell integration.
+    // Shared UI logic contract used by this future/third-wave XR shell workbench.
     "aerobeat-ui-core": {
       "url": "git@github.com:AeroBeat-Workouts/aerobeat-ui-core.git",
       "checkout": "v0.1.1",
       "subfolder": "/"
     },
-    // Batch 2 pins the stable community UI kit contract for XR shell composition.
+    // Stable community UI kit contract for future XR shell composition work.
     "aerobeat-ui-kit-community": {
       "url": "git@github.com:AeroBeat-Workouts/aerobeat-ui-kit-community.git",
       "checkout": "v0.1.1",
