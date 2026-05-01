@@ -71,7 +71,7 @@ Do not silently widen scope. If the repo exposes cross-repo fallout or deeper im
 **Commits:**
 - `7eb3221` - `Downscope XR shell repo truth`
 - `4ee1d0f` - `Fix XR shell downscope retry drift`
-- `PENDING` - `Commit canonical XR test UID hygiene fix`
+- `42b2c6f` - `Commit XR test UID hygiene fix`
 
 **Lessons Learned:** In this repo class, the meaningful drift was mostly wording truth rather than implementation architecture. But repo-truth guard tests still need normal Godot hygiene: if a new test script requires a companion `.uid`, the canonical fix is to treat that UID as part of the committed repo-local test asset set so the standard validation flow does not dirty the tree.
 
