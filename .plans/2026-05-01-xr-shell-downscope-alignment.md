@@ -66,7 +66,7 @@ Do not silently widen scope. If the repo exposes cross-repo fallout or deeper im
 **Reference Check:** `REF-01`, `REF-02`, and `REF-03` satisfied. The README and testbed/manifest wording now match the downscoped docs truth for PC-first camera v1, mobile second, and XR later; no conflicting repo-local package metadata remained after the pass.
 
 **Commits:**
-- Pending final commit hash.
+- `7eb3221` - `Downscope XR shell repo truth`
 
 **Lessons Learned:** In this repo class, the meaningful drift was mostly wording truth rather than implementation architecture. The important thing was to make the hidden workbench and manifest comments tell the same product-scope story as the public README.
 
