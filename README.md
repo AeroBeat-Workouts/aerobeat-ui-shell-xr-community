@@ -34,7 +34,7 @@ cd .testbed
 godotenv addons install
 ```
 
-That restores this repo's current dev/test manifest into `.testbed/addons/`. Canonically, UI shell repos should describe themselves around `aerobeat-ui-core` plus the concrete UI kit and any other lane repos the shell actually consumes.
+That restores this repo's current dev/test manifest into `.testbed/addons/`. Canonically, UI shell repos should describe themselves around `aerobeat-ui-core` plus the concrete UI kit and any other lane repos the shell actually consumes; this XR shell no longer carries the stale root-level `aerobeat-core` pin.
 
 ### Open the workbench
 
@@ -69,7 +69,7 @@ godot --headless --path .testbed --script addons/gut/gut_cmdln.gd \
 
 - `.testbed/addons.jsonc` is the committed dev/test dependency contract.
 - XR remains a future / third-wave shell path; this repo should not claim present-tense release parity with the active desktop-first v1 slice.
-- The current manifest still pins the transition-era `aerobeat-core` package key alongside `aerobeat-ui-core` and `aerobeat-ui-kit-community`. Treat that old core pin as bootstrap-state drift rather than the canonical lane model.
+- `.testbed/addons.jsonc` now reflects the actual shell boundary: `aerobeat-ui-core` plus `aerobeat-ui-kit-community`, with `gut` for repo-local validation.
 - Canonical shared dependency language for UI shell repos is `aerobeat-ui-core` plus the concrete UI kit and any additional lane repos the shell actually consumes.
 - Repo-local unit tests live under `.testbed/tests/`; this repo's current package payload is rooted at `/`, so the workbench does not ship a `.testbed/src` bridge for this subset.
 - The current package shape is consumed from the repo root (`subfolder: "/"`) for downstream installs.
