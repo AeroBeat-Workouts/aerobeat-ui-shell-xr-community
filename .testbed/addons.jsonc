@@ -1,19 +1,21 @@
 {
   "$schema": "https://chickensoft.games/schemas/addons.schema.json",
   "addons": {
-    // Shared UI logic contract used by this future/third-wave XR shell workbench.
     "aerobeat-ui-core": {
-      "url": "git@github.com:AeroBeat-Workouts/aerobeat-ui-core.git",
-      "checkout": "v0.1.1",
-      "subfolder": "/"
+      "url": "../../aerobeat-ui-core",
+      "subfolder": "/",
+      "source": "symlink"
     },
-    // Stable community UI kit contract for future XR shell composition work.
     "aerobeat-ui-kit-community": {
-      "url": "git@github.com:AeroBeat-Workouts/aerobeat-ui-kit-community.git",
-      "checkout": "v0.1.1",
-      "subfolder": "/"
+      "url": "../../aerobeat-ui-kit-community",
+      "subfolder": "/",
+      "source": "symlink"
     },
-    // GUT drives the repo-local metadata/manifest tests inside the hidden workbench.
+    "aerobeat-tool-headless-manager": {
+      "url": "../../aerobeat-tool-headless-manager",
+      "subfolder": "/",
+      "source": "symlink"
+    },
     "gut": {
       "url": "git@github.com:bitwes/Gut.git",
       "checkout": "main",
