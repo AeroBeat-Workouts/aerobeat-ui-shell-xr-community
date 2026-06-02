@@ -59,7 +59,7 @@ godot --headless --path .testbed --import
 From the repo root:
 
 ```bash
-godot --headless --path .testbed --script addons/gut/gut_cmdln.gd \
+godot --headless --path .testbed --script addons/aerobeat-vendor-godot-unit-test/gut_cmdln.gd \
   -gdir=res://tests \
   -ginclude_subdirs \
   -gexit
@@ -69,7 +69,7 @@ godot --headless --path .testbed --script addons/gut/gut_cmdln.gd \
 
 - `.testbed/addons.jsonc` is the committed dev/test dependency contract.
 - XR remains a future / third-wave shell path; this repo should not claim present-tense release parity with the active desktop-first v1 slice.
-- `.testbed/addons.jsonc` now reflects the actual shell boundary: `aerobeat-ui-core` plus `aerobeat-ui-kit-community`, with `gut` for repo-local validation.
+- `.testbed/addons.jsonc` now reflects the actual shell boundary: `aerobeat-ui-core` plus `aerobeat-ui-kit-community`, with `aerobeat-vendor-godot-unit-test` for repo-local validation.
 - Canonical shared dependency language for UI shell repos is `aerobeat-ui-core` plus the concrete UI kit and any additional lane repos the shell actually consumes.
 - Repo-local unit tests live under `.testbed/tests/`; this repo's current package payload is rooted at `/`, so the workbench does not ship a `.testbed/src` bridge for this subset.
 - The current package shape is consumed from the repo root (`subfolder: "/"`) for downstream installs.
